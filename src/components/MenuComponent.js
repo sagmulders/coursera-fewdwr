@@ -8,6 +8,12 @@ class Menu extends Component {
         this.state = {
             selectedDish: null
         }
+
+        console.log('menu component constructor')
+    }
+
+    componentDidMount() {
+        console.log('menu component componentDidMount')
     }
 
     onDishSelect(dish) {
@@ -15,7 +21,7 @@ class Menu extends Component {
     }
 
     renderDish(dish) {
-        if (dish != null) {
+        if (dish) {
             return (
                 <Card>
                     <CardImg width="100%" src={dish.image} alt={dish.name} />
@@ -34,6 +40,8 @@ class Menu extends Component {
     }
 
     render() {
+
+        console.log('menu component render')
 
         const menu = this.props.dishes.map(dish => {
             return (
