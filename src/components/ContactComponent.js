@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Contact(props) {
     return(
         <div className="container">
-            <div classname="row">
+            <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                     <BreadcrumbItem>Contact us</BreadcrumbItem>
